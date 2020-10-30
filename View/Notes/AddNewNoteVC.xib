@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNewNoteVC" customModule="NotesKeeper" customModuleProvider="target">
+            <connections>
+                <outlet property="addToDoBtn" destination="SXv-fL-vi0" id="l5j-15-9lj"/>
+                <outlet property="addToDoTF" destination="Nhs-R4-Qa7" id="mje-jy-ET0"/>
+                <outlet property="notePriorityTF" destination="REA-Uz-0jF" id="cN9-Rg-pMD"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YoR-wp-Xeh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LRw-cE-pzU">
+                    <rect key="frame" x="50" y="353" width="314" height="190"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ToDo" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nhs-R4-Qa7">
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="PW6-YG-nJt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ToDo Priority" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="REA-Uz-0jF">
+                            <rect key="frame" x="0.0" y="70" width="314" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXv-fL-vi0">
+                            <rect key="frame" x="0.0" y="140" width="314" height="50"/>
+                            <color key="backgroundColor" red="0.050454076469999998" green="0.2297388561" blue="0.34138659630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="27"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Add "/>
+                            <connections>
+                                <action selector="AddBtnPressed:" destination="-1" eventType="touchUpInside" id="0b6-md-xUP"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LRw-cE-pzU" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="06U-cq-NPr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LRw-cE-pzU" secondAttribute="trailing" constant="50" id="2Vj-ed-h8Z"/>
+                <constraint firstItem="LRw-cE-pzU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="RhE-cP-JcK"/>
+                <constraint firstItem="LRw-cE-pzU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="50" id="cGQ-Ud-Jd6"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="109.82142857142857"/>
+        </view>
+    </objects>
+</document>
